@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fado_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="4dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/logo_description"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fado_wordmark" />
+
+        <TextView
+            android:id="@+id/tagline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="12dp"
+            android:text="@string/tagline"
+            android:textColor="@color/fado_text_dim"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/previewFrame"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginVertical="8dp"
+        android:background="@color/fado_card">
+
+        <SurfaceView
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/preview_description" />
+
+        <TextView
+            android:id="@+id/previewHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="6dp"
+            android:alpha="0.6"
+            android:text="@string/preview_hint"
+            android:textColor="@color/fado_text_dim"
+            android:textSize="11sp" />
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/controlsScroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="24dp">
+
+            <!-- STATUS -->
+            <TextView
+                style="@style/FadoSection"
+                android:text="@string/section_status" />
+
+            <TextView
+                android:id="@+id/statusAccess"
+                style="@style/FadoStatus" />
+
+            <TextView
+                android:id="@+id/statusPlayer"
+                style="@style/FadoStatus" />
+
+            <TextView
+                android:id="@+id/statusTrack"
+                style="@style/FadoStatus" />
+
+            <TextView
+                android:id="@+id/statusLyrics"
+                style="@style/FadoStatus" />
+
+            <TextView
+                android:id="@+id/statusTile"
+                style="@style/FadoStatus" />
+
+            <Button
+                android:id="@+id/btnAccess"
+                style="@style/FadoButton.Accent"
+                android:layout_marginTop="8dp"
+                android:text="@string/btn_access" />
+
+            <Button
+                android:id="@+id/btnRestricted"
+                style="@style/FadoButton"
+                android:text="@string/btn_restricted" />
+
+            <TextView
+                android:id="@+id/restrictedHint"
+                style="@style/FadoHint"
+                android:text="@string/restricted_hint" />
+
+            <!-- SYNCHRONIZACJA -->
+            <TextView
+                style="@style/FadoSection"
+                android:text="@string/section_sync" />
+
+            <TextView
+                android:id="@+id/offsetValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingVertical="6dp"
+                android:textColor="@color/fado_text"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnMinus100"
+                    style="@style/FadoButton.Small"
+                    android:text="−100" />
+
+                <Button
+                    android:id="@+id/btnMinus10"
+                    style="@style/FadoButton.Small"
+                    android:text="−10" />
+
+                <Button
+                    android:id="@+id/btnPlus10"
+                    style="@style/FadoButton.Small"
+                    android:text="+10" />
+
+                <Button
+                    android:id="@+id/btnPlus100"
+                    style="@style/FadoButton.Small"
+                    android:text="+100" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnOffsetReset"
+                style="@style/FadoButton"
+                android:text="@string/btn_offset_reset" />
+
+            <TextView
+                style="@style/FadoHint"
+                android:text="@string/offset_hint" />
+
+            <!-- WYGLĄD -->
+            <TextView
+                style="@style/FadoSection"
+                android:text="@string/section_look" />
+
+            <Button
+                android:id="@+id/btnMode"
+                style="@style/FadoButton" />
+
+            <Button
+                android:id="@+id/btnTheme"
+                style="@style/FadoButton" />
+
+            <!-- NARZĘDZIA -->
+            <TextView
+                style="@style/FadoSection"
+                android:text="@string/section_tools" />
+
+            <Button
+                android:id="@+id/btnDemo"
+                style="@style/FadoButton" />
+
+            <Button
+                android:id="@+id/btnReload"
+                style="@style/FadoButton"
+                android:text="@string/btn_reload" />
+
+            <Button
+                android:id="@+id/btnSpotify"
+                style="@style/FadoButton" />
+
+            <!-- TEKST OBOK MAP GOOGLE -->
+            <TextView
+                style="@style/FadoSection"
+                android:text="@string/section_tile" />
+
+            <TextView
+                style="@style/FadoHint"
+                android:text="@string/help_tile" />
+
+            <!-- ANDROID AUTO -->
+            <TextView
+                style="@style/FadoSection"
+                android:text="@string/section_auto" />
+
+            <TextView
+                style="@style/FadoHint"
+                android:text="@string/help_android_auto" />
+
+            <!-- BROADCAST -->
+            <TextView
+                style="@style/FadoSection"
+                android:text="@string/section_broadcast" />
+
+            <TextView
+                style="@style/FadoHint"
+                android:text="@string/help_spotify_broadcast" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

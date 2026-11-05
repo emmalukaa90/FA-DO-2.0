@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tło ikony adaptacyjnej: granatowy gradient radialny jak w logo FA-DO -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+
+    <path android:pathData="M0,0h512v512h-512z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="radial"
+                android:centerX="256"
+                android:centerY="215"
+                android:gradientRadius="360">
+                <item android:offset="0.0" android:color="#FF0E2238" />
+                <item android:offset="0.55" android:color="#FF071120" />
+                <item android:offset="1.0" android:color="#FF040811" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Delikatna zielono-turkusowa poświata za logo -->
+    <path android:pathData="M256,256m-230,0a230,230 0,1 1,460 0a230,230 0,1 1,-460 0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="radial"
+                android:centerX="246"
+                android:centerY="256"
+                android:gradientRadius="230">
+                <item android:offset="0.0" android:color="#3810B981" />
+                <item android:offset="0.5" android:color="#1A06B6D4" />
+                <item android:offset="1.0" android:color="#00000000" />
+            </gradient>
+        </aapt:attr>
+    </path>
+</vector>

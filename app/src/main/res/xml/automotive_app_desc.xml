@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<automotiveApp>
+    <!-- Kafelek multimediów (tekst obok Map Google) -->
+    <uses name="media" />
+    <!-- Pełnoekranowe karaoke (Car App Library) -->
+    <uses name="template" />
+</automotiveApp>

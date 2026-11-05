@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FA-DO</string>
+    <string name="listener_label">FA-DO — synchronizacja ze Spotify</string>
+    <string name="tagline">Karaoke dla Spotify i Android Auto</string>
+    <string name="logo_description">Logo FA-DO</string>
+    <string name="preview_description">Podgląd tekstu karaoke</string>
+    <string name="preview_hint">Dotknij podglądu: pełny ekran</string>
+
+    <!-- Sekcje ekranu telefonu -->
+    <string name="section_status">Status</string>
+    <string name="section_sync">Synchronizacja</string>
+    <string name="section_look">Wygląd</string>
+    <string name="section_tools">Narzędzia</string>
+    <string name="section_auto">Android Auto</string>
+    <string name="section_broadcast">Spotify bez dostępu do powiadomień</string>
+
+    <!-- Statusy -->
+    <string name="status_access_ok">✅ Dostęp do powiadomień: nadany</string>
+    <string name="status_access_missing">❌ Dostęp do powiadomień: brak</string>
+    <string name="player_spotify_session">🎧 Spotify: połączono (MediaSession — najdokładniej)</string>
+    <string name="player_spotify_broadcast">🎧 Spotify: połączono przez broadcast Spotify</string>
+    <string name="player_other">🎧 Inny odtwarzacz: %1$s</string>
+    <string name="player_waiting">⏳ Czekam na odtwarzanie w Spotify…</string>
+    <string name="player_no_access">⏸ Brak źródła odtwarzania — nadaj dostęp do powiadomień</string>
+    <string name="playing_suffix">odtwarzanie</string>
+    <string name="paused_suffix">pauza</string>
+    <string name="track_none">♪ Nic nie jest odtwarzane</string>
+    <string name="track_format">♪ %1$s — %2$s (%3$s)</string>
+    <string name="lyrics_idle">📝 Tekst: —</string>
+    <string name="lyrics_loading">📝 Szukam tekstu w LRCLIB…</string>
+    <string name="lyrics_ready">📝 %1$s: %2$s · %3$d linii</string>
+    <string name="lyrics_not_found">📝 Brak tekstu w LRCLIB dla tego utworu</string>
+    <string name="lyrics_instrumental">📝 Utwór instrumentalny</string>
+    <string name="lyrics_failed">📝 Błąd pobierania: %1$s</string>
+    <string name="kind_word">synchronizacja słów</string>
+    <string name="kind_line">synchronizacja linii, litery estymowane</string>
+    <string name="kind_unsynced">bez synchronizacji (≈ przybliżenie)</string>
+
+    <!-- Przyciski -->
+    <string name="btn_access">Nadaj dostęp do powiadomień</string>
+    <string name="btn_restricted">Informacje o aplikacji (ustawienia ograniczone)</string>
+    <string name="restricted_hint">Android 13+ blokuje ten dostęp dla aplikacji zainstalowanych z pliku APK. Jeśli przełącznik FA-DO jest wyszarzony: stuknij przycisk powyżej → menu ⋮ (prawy górny róg) → „Zezwól na ustawienia ograniczone”, potem wróć i nadaj dostęp.</string>
+    <string name="offset_format">Przesunięcie tekstu: %1$s ms</string>
+    <string name="offset_hint">Tekst się spieszy względem głosu → „−”. Spóźnia się → „+”. W aucie (Bluetooth / Android Auto) zwykle potrzeba ok. −150…−300 ms. Ustawienie jest wspólne dla telefonu i auta.</string>
+    <string name="btn_offset_reset">Zeruj przesunięcie</string>
+    <string name="mode_word">Piłka skacze: po słowach</string>
+    <string name="mode_syllable">Piłka skacze: po sylabach</string>
+    <string name="theme_fado">Motyw: FA-DO (zielono-turkusowy)</string>
+    <string name="theme_classic">Motyw: klasyczny (cyjan + czerwona piłka)</string>
+    <string name="btn_demo_start">▶ Uruchom demo (test bez Spotify)</string>
+    <string name="btn_demo_stop">■ Zatrzymaj demo</string>
+    <string name="btn_reload">↻ Pobierz tekst ponownie</string>
+    <string name="btn_spotify_open">Otwórz Spotify</string>
+    <string name="btn_spotify_install">Zainstaluj Spotify</string>
+    <string name="toast_settings_missing">Nie udało się otworzyć ustawień — otwórz je ręcznie.</string>
+
+    <string name="help_android_auto">1. Otwórz ustawienia Android Auto na telefonie (Ustawienia → Połączone urządzenia → Android Auto albo aplikacja Android Auto).\n2. Przewiń na sam dół i stuknij 10 razy w „Wersja”, potwierdź tryb programisty.\n3. Menu ⋮ (prawy górny róg) → Ustawienia programisty → zaznacz „Nieznane źródła”. Bez tego Android Auto ukrywa aplikacje spoza Sklepu Play.\n4. W aucie FA-DO ma dwa wejścia: „FA-DO Tekst” (kafelek obok Map, opis wyżej) oraz „FA-DO Karaoke” — pełne karaoke z piłką w dużym kafelku zamiast mapy.\n5. W „FA-DO Karaoke” przyciski − / + przesuwają tekst o 100 ms, „Słowa/Sylaby” zmienia skoki piłki, ▶ uruchamia demo.</string>
+    <string name="help_spotify_broadcast">W Spotify: Ustawienia → sekcja Urządzenia (lub Aplikacje i urządzenia) → włącz „Device Broadcast Status” (w polskiej wersji nazwa może brzmieć inaczej, np. „Stan transmisji urządzenia”). FA-DO odbiera wtedy stan odtwarzania nawet bez dostępu do powiadomień. Dostęp do powiadomień daje jednak dokładniejszą synchronizację.</string>
+
+    <!-- Renderer (telefon + auto) -->
+    <string name="badge_word">synchro słów</string>
+    <string name="badge_line">synchro linii</string>
+    <string name="badge_unsynced">≈ bez synchro</string>
+    <string name="badge_loading">szukam…</string>
+    <string name="msg_no_access">Nadaj FA-DO dostęp do powiadomień</string>
+    <string name="msg_no_access_hint">Otwórz FA-DO na telefonie (na postoju) albo włącz w Spotify „Device Broadcast Status”.</string>
+    <string name="msg_no_track">Włącz muzykę w Spotify</string>
+    <string name="msg_no_track_hint">Tekst pojawi się tutaj automatycznie.</string>
+    <string name="msg_loading">Szukam tekstu…</string>
+    <string name="msg_not_found">Brak tekstu dla tego utworu</string>
+    <string name="msg_instrumental">♪ Utwór instrumentalny ♪</string>
+    <string name="msg_error">Nie udało się pobrać tekstu</string>
+    <string name="msg_error_hint">Sprawdź internet — spróbuję ponownie przy następnym utworze.</string>
+
+    <!-- Android Auto: kafelek multimediów (tekst obok Map Google) -->
+    <string name="media_service_label">FA-DO Tekst</string>
+    <string name="car_nav_label">FA-DO Karaoke</string>
+    <string name="media_no_track">Włącz muzykę w Spotify</string>
+    <string name="media_open_phone">Nadaj FA-DO dostęp do powiadomień</string>
+    <string name="media_loading">Szukam tekstu…</string>
+    <string name="media_not_found">Brak tekstu dla tego utworu</string>
+    <string name="media_instrumental">♪ Utwór instrumentalny</string>
+    <string name="media_browse_current">Tekst bieżącego utworu</string>
+    <string name="status_tile_active">🚗 Kafelek obok Map Google: aktywny</string>
+    <string name="status_tile_idle">🚗 Kafelek obok Map Google: nieużywany</string>
+    <string name="section_tile">Tekst obok Map Google</string>
+    <string name="help_tile">1. W aucie uruchom nawigację w Mapach Google — zostaje w dużym kafelku.\n2. Otwórz menu aplikacji Android Auto → „FA-DO Tekst” (jest w grupie aplikacji muzycznych) → stuknij „Tekst bieżącego utworu”, potem wróć do Map.\n3. W kafelku multimediów zobaczysz fragment śpiewany teraz (tytuł) i następny (podtytuł). Play/pauza/następny sterują Spotify.\n4. Jeśli kafelek wróci do Spotify (np. po wznowieniu odtwarzania z telefonu), wybierz ponownie „FA-DO Tekst”.\nKafelek pokazuje tylko tekst — Android Auto nie pozwala innym aplikacjom rysować animacji obok Map. Pełne karaoke z piłką to „FA-DO Karaoke” (zastępuje mapę).</string>
+
+    <!-- Android Auto: przycisk z napisem na pasku akcji (pozostałe mają ikony) -->
+    <string name="car_mode_word">Słowa</string>
+    <string name="car_mode_syllable">Sylaby</string>
+</resources>

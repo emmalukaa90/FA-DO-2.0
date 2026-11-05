@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Warstwa monochromatyczna (ikony tematyczne Android 13+): kształty z ic_fado_logo.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+
+    <group
+        android:pivotX="256"
+        android:pivotY="256"
+        android:scaleX="0.67"
+        android:scaleY="0.67"
+        android:translateX="-20.1"
+        android:translateY="6.4">
+
+        <!-- Piłka karaoke -->
+        <path
+            android:fillColor="#FFFFFFFF"
+            android:pathData="M260,156m-29,0a29,29 0,1 1,58 0a29,29 0,1 1,-58 0" />
+
+        <!-- F jako szesnastka -->
+        <path
+            android:fillColor="#FFFFFFFF"
+            android:pathData="M134,196 L116,334 L135,334 L145,260 C162,258 178,260 194,252 C202,248 207,240 210,232 C192,240 172,241 148,241 L152,211 C178,210 202,212 220,202 C230,196 236,184 240,170 C218,184 192,187 154,188 Z" />
+        <path
+            android:fillColor="#FFFFFFFF"
+            android:pathData="M82,354 a28,20 -24,1 0,52 -20 a28,20 -24,1 0,-52 20 z" />
+
+        <!-- A -->
+        <path
+            android:fillColor="#FFFFFFFF"
+            android:fillType="evenOdd"
+            android:pathData="M218,206 C221,199 229,199 231,206 L256,326 C257,331 253,335 248,335 L234,335 C230,335 227,332 226,328 L221,301 L184,301 L172,328 C170,332 166,335 162,335 L148,335 C143,335 140,330 142,325 Z M216,234 L192,283 L218,283 Z" />
+
+        <!-- Łącznik -->
+        <path
+            android:fillColor="#FFFFFFFF"
+            android:pathData="M267,272 L297,272 C302,272 304,277 302,282 L300,286 C298,290 294,292 289,292 L261,292 C256,292 254,287 256,282 L258,278 C260,274 263,272 267,272 Z" />
+
+        <!-- D -->
+        <path
+            android:fillColor="#FFFFFFFF"
+            android:fillType="evenOdd"
+            android:pathData="M326,202 L364,202 C398,202 414,226 408,268 C402,310 376,335 340,335 L302,335 C297,335 294,331 295,326 L317,210 C318,205 321,202 326,202 Z M338,224 L322,312 L342,312 C364,312 380,295 384,268 C388,240 376,224 356,224 Z" />
+
+        <!-- O jako cała nuta -->
+        <path
+            android:fillColor="#FFFFFFFF"
+            android:fillType="evenOdd"
+            android:pathData="M454,202 C482,202 498,230 492,268 C486,306 462,335 434,335 C406,335 392,306 398,268 C404,230 426,202 454,202 Z M451,223 C436,223 424,244 421,268 C418,292 426,313 441,313 C456,313 468,292 471,268 C474,244 466,223 451,223 Z" />
+    </group>
+</vector>

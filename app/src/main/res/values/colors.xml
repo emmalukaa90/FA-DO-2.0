@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fado_bg">#FF071120</color>
+    <color name="fado_surface">#FF0E2238</color>
+    <color name="fado_card">#FF0B1A2E</color>
+    <color name="fado_text">#FFE6F1FF</color>
+    <color name="fado_text_dim">#FF8BA3C0</color>
+    <color name="fado_accent">#FF10B981</color>
+    <color name="fado_accent_dark">#FF047857</color>
+    <color name="fado_cyan">#FF06B6D4</color>
+    <color name="fado_button">#FF16324F</color>
+    <color name="fado_warning">#FFFBBF24</color>
+</resources>
